@@ -59,5 +59,37 @@ table.board tr:nth-of-type(odd) td:nth-of-type(even) {
    background-color:burlywood;
 }
 
+.uno {
+    position: relative;
+}
+
+.uno div {
+    position: absolute;
+    top: 15px;
+    left: 90px;
+    font-weight: bold;
+}
+
+table:hover {
+    cursor: pointer;
+}
+
+tr th:hover {
+    background-color: red;
+    /* non funziona
+    funziona solo per i tr */
+}
+
+table tr:hover {
+    background-color: red;
+}
+
+tr th td:hover {
+    background-color: red;
+}
+
+
+
+
 
 
