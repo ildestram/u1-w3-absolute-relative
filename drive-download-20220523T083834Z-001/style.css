@@ -1,0 +1,92 @@
+.container {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+  .container div {
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    display: inline-block;
+  }
+
+  /* es.1 */
+  .container div:nth-child(even) {
+    border: 2px solid blue;
+  }
+
+  /* es.2 */
+  .container div:nth-child(odd) {
+    color: green;
+  }
+
+  /* es.3 */
+  .container div span:nth-child(odd) {
+    color: black;
+  }
+
+/* es.4 */
+  .container div:nth-child(2) span:last-of-type{
+    color: blue;
+  }
+
+  /* es.5 */
+  .container div:nth-child(6) span:not(:last-of-type) {
+    color: yellow;
+  }
+
+  /* es.6 */
+  .container div {
+    position: relative;
+  }
+
+  /* es.6 */
+  .container div span:nth-child(1){
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+  }
+
+  /* es.7 */
+  .container div span:nth-child(2){
+    position: absolute;
+    top: -20px;
+    left: 20px;
+  }
+
+  /* es.8 */
+  .container div span:nth-child(3) {
+    position: absolute;
+    top:0;
+    left:0;
+  }
+
+  /* es.9 */
+  .container div span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  .container div:first-child span:nth-child(4) {
+    position: absolute;
+    left: -15px;
+    top: 20px;
+  }
+
+  .container div:last-child span:nth-child(4) {
+    position: absolute;
+    left: 80px;
+    top: 20px;
+  }
+
+  /* es.10 */
+  .container {
+    font-size: 0;
+    /* vanno via tutte le lettere */
+  }
+
+  .container div {
+    font-size: 1rem;
+  }
+
+  
